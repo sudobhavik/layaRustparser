@@ -14,6 +14,10 @@ A high-performance, vendor-agnostic, containerized, strictly **air-gapped Univer
 
 ![ULPF end-to-end flow: raw syslog/JSON/CSV -> classify -> zero-copy parse -> OCSF 1.3 JSON -> Parquet WORM + verify, with SHA-256(raw) / UUIDv7 -> RFC 6962 Merkle root -> ledger.jsonl provenance branch](docs/diagrams/hero-flow.png)
 
+
+Check the live demo via :- http://ec2-16-4-38-85.ap-south-1.compute.amazonaws.com:3000/
+
+
 **Key capabilities**
 
 - **Zero-copy hot path.** p50 is **2.88 µs**/line on the core corpus, **7.28 µs** at 224k lines (**−96.1% / −99.3%** vs the frozen baseline), **849,481 EPS** at full scale (**2.15×** baseline).
